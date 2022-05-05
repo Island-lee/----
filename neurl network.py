@@ -1,5 +1,5 @@
 import pandas as pd
-test =pd.read_csv(r'D:\anaconda3\envs\newpytorch1\Lib\site-packages\pyhanlp\static\data\test\cnname\train.csv',header=None)
+test =pd.read_csv('train.csv',header=None)
 name = ""
 for i, line in test.iterrows():
     name += line[0][1:]
