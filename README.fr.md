@@ -1,3 +1,3 @@
 # Dossier d'apprentissage Bienvenue pour poser des questions
 
-traduis pour moi
+给老子翻译
