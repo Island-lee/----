@@ -8,7 +8,7 @@ gala-gopher一款結合eBPF、java agent等非侵入可觀測技術的觀測平�
 
 #### 網絡監控
 
-#### 輸入輸出控制
+#### 輸入/輸出控制
 
 #### 應用性能監控
 
@@ -32,7 +32,7 @@ gala-gopher一款結合eBPF、java agent等非侵入可觀測技術的觀測平�
     EulerOS-V2R9 : https://117.78.1.88/package/show/home:zpublic:branches:openEuler:20.03:LTS:SP1/gala-gopher-v2r9
     ```
 
-    -   每日構建repo源：配置為yum源後安裝
+    -   每日构建repo源：配置为yum源后安装
 
     ```basic
     openEuler 22.03-LTS: http://121.36.84.172/dailybuild/openEuler-22.03-LTS/openEuler-22.03-LTS/EPOL/main/
@@ -235,7 +235,7 @@ gala-gopher集成了常用的native探針以及知名中間件探針；gala-goph
 | 分佈式存儲全棧I/O觀測能力                                                 | 22.12 | 開放歐拉 22.03 SP1                      |
 | 虛擬化存儲I/O觀測能力                                                   | 22.12 | 開放歐拉 22.03 SP1                      |
 | Block I/O觀測能力                                                  | 22.12 | 開放歐拉 22.03 SP1                      |
-| 容器运行观测能力                                                       | 22.12 | 開放歐拉 22.03 SP1                      |
+| 容器運行觀測能力                                                       | 22.12 | 開放歐拉 22.03 SP1                      |
 | Redis性能觀測能力                                                    | 22.12 | 開放歐拉 22.03 SP1                      |
 | PG性能觀測能力                                                       | 22.12 | 開放歐拉 22.03 SP1                      |
 | Nginx會話觀測能力                                                    | 22.12 | 開放歐拉 22.03 SP1                      |
