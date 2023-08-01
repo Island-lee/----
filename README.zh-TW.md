@@ -32,7 +32,7 @@ gala-gopher一款結合eBPF、java agent等非侵入可觀測技術的觀測平�
     EulerOS-V2R9 : https://117.78.1.88/package/show/home:zpublic:branches:openEuler:20.03:LTS:SP1/gala-gopher-v2r9
     ```
 
-    -   每日构建repo源：配置为yum源后安装
+    -   每日構建repo源：配置為yum源後安裝
 
     ```basic
     openEuler 22.03-LTS: http://121.36.84.172/dailybuild/openEuler-22.03-LTS/openEuler-22.03-LTS/EPOL/main/
