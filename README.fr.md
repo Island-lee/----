@@ -90,7 +90,7 @@ Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'
 
 -   Construire une image de conteneur
 
-    获取gala-gopher的rpm包，获取方式详见[Déploiement RPM](#RPM方式部署)。
+    Procurez-vous le package rpm de gala-gopher. Pour plus de détails, voir[Déploiement RPM](#RPM方式部署)。
 
     Le Dockerfile pour générer des images de conteneurs est archivé sur[répertoire de construction](./build), voir la méthode de génération pour plus de détails[Comment générer une image de conteneur gala-gopher](doc/how_to_build_docker_image.md)。
 
@@ -279,3 +279,5 @@ gala-gopher intègre des sondes natives couramment utilisées et des sondes midd
 | Prend en charge l'amarrage sous la forme de fichiers journaux                                          | 22.12               | openEuler 22.03 SP1                  |
 | Prise en charge de l'amarrage du client kafka                                                          | 22.12               | openEuler 22.03 SP1                  |
 | Prise en charge de la capacité de surveillance de la sonde de changement dynamique de l'interface REST | 23.06               | openEuler 22.03 SP1, openEuler 23.09 |
+
+test
