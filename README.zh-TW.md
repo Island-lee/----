@@ -279,3 +279,5 @@ gala-gopher集成了常用的native探針以及知名中間件探針；gala-goph
 | 支持日誌文件形式對接              | 22.12 | 開放歐拉 22.03 SP1                      |
 | 支持kafka client形式對接      | 22.12 | 開放歐拉 22.03 SP1                      |
 | 支持REST接口動態變更探針監控能力      | 23.06 | openEuler 22.03 SP1、openEuler 23.09 |
+
+測試
