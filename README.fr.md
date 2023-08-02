@@ -2,7 +2,7 @@
 
 ### qu'est-ce que gala-gopher
 
-Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'autres technologies observables non intrusives.Il peut facilement augmenter et diminuer les sondes grâce à l'architecture basée sur les sondes. Gala-gopher est le composant responsable de la collecte de données dans le projet gala. Il fournit des données telles que les métriques, les événements et les performances pour le projet gala, afin que le projet gala puisse terminer le dessin de la topologie du système et localiser la cause première de la faute.
+Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'autres technologies observables non intrusives.Il peut facilement augmenter et diminuer les sondes grâce à l'architecture basée sur les sondes. Gala-gopher est le composant responsable de la collecte de données dans le projet gala. Il fournit des données telles que Metrics, Event et Perf pour le projet gala, ce qui est pratique pour le projet gala pour terminer le dessin de la topologie du système et l'emplacement de la cause première de la panne.
 
 ### Cas d'utilisation
 
@@ -22,7 +22,7 @@ Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'
 
 -   Obtenir le package rpm
 
-    Gala-gopher est actuellement publié dans openEuler 21.09 (maintenance arrêtée)/openEuler 22.09 (maintenance arrêtée)/openEuler 22.03-LTS-SP1, et le package rpm peut être obtenu en configurant la source officielle du dépôt de la version ci-dessus ; pour les autres versions versions we Les méthodes suivantes sont fournies pour obtenir des packages rpm :
+    Gala-gopher est actuellement publié dans openEuler 21.09 (maintenance arrêtée)/openEuler 22.09 (maintenance arrêtée)/openEuler 22.03-LTS-SP1, et le package rpm peut être obtenu en configurant la source officielle du référentiel de la version ci-dessus ; pour les autres versions versions we Les méthodes suivantes sont fournies pour obtenir des packages rpm :
 
     -   Lien OBS : Téléchargez manuellement le package rpm de l'architecture correspondante à partir de la page Web
 
@@ -38,7 +38,7 @@ Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'
     openEuler 22.03-LTS: http://121.36.84.172/dailybuild/openEuler-22.03-LTS/openEuler-22.03-LTS/EPOL/main/
     ```
 
--   installation tr/min
+-   installation rpm
 
     ```bash
     yum install gala-gopher
@@ -126,7 +126,7 @@ Gala-gopher est une plate-forme d'observation qui combine eBPF, agent java et d'
 
 -   récupérer des données
 
-    Comme indiqué dans la commande docker run à l'étape ci-dessus, nous avons mappé le port 8888 de l'hôte et le port 8888 du conteneur, afin que nous puissions obtenir des données via le port 8888 pour vérifier si gala-gopher s'exécute avec succès :
+    Comme indiqué dans la commande docker run à l'étape ci-dessus, nous avons mappé le port 8888 de l'hôte et le port 8888 du conteneur, afin que nous puissions obtenir des données via le port 8888 pour vérifier si gala-gopher s'exécute avec succès :
 
     ```shell
     [root@localhost build]# curl http://localhost:8888
@@ -178,11 +178,11 @@ gala-gopher intègre des sondes natives couramment utilisées et des sondes midd
 
 -   sonde native
 
-    Les sondes natives sont principalement des indicateurs d'observation du système collectés sur la base du système de fichiers Linux proc ;
+    Les sondes natives sont principalement des indicateurs d'observation du système collectés sur la base du système de fichiers proc basé sur Linux ;
 
 -   étendre la sonde
 
-    Prend en charge les programmes de sonde tiers dans différents langages tels que shell/java/python/c, et peut être intégré dans le cadre gala-gopher uniquement en respectant le format de rapport de données léger ; il est pratique de répondre aux demandes d'observation dans divers scénarios d'application; actuellement Réaliser l'observation de sonde et le rapport d'index de programmes middleware bien connus, tels que: lvs, nginx, haproxy, dnsmasq, dnsbind, kafka, rabbitmq, etc.;
+    Prend en charge les programmes de sonde tiers dans différents langages tels que shell/java/python/c, et peut être intégré dans le cadre gala-gopher uniquement en respectant le format de rapport de données léger ; il est pratique de répondre aux exigences d'observation dans divers scénarios d'application; actuellement Réaliser l'observation de sonde et le rapport d'index de programmes middleware bien connus, tels que: lvs, nginx, haproxy, dnsmasq, dnsbind, kafka, rabbitmq, etc.;
 
 -   fichier de configuration de déploiement
 
@@ -235,7 +235,7 @@ gala-gopher intègre des sondes natives couramment utilisées et des sondes midd
 | Capacité d'observation des E/S de la pile complète du stockage distribué                      | 22.12               | openEuler 22.03 SP1                  |
 | Capacité d'observation des E/S de stockage virtualisé                                         | 22.12               | openEuler 22.03 SP1                  |
 | Capacité d'observation des E/S de bloc                                                        | 22.12               | openEuler 22.03 SP1                  |
-| Capacité d'observation en cours de conteneur                                                  | 22.12               | openEuler 22.03 SP1                  |
+| Capacité d'observation du fonctionnement des conteneurs                                       | 22.12               | openEuler 22.03 SP1                  |
 | Capacité d'observation des performances de Redis                                              | 22.12               | openEuler 22.03 SP1                  |
 | Capacité d'observation des performances PG                                                    | 22.12               | openEuler 22.03 SP1                  |
 | Capacité d'observation de session Nginx                                                       | 22.12               | openEuler 22.03 SP1                  |
@@ -279,5 +279,3 @@ gala-gopher intègre des sondes natives couramment utilisées et des sondes midd
 | Prend en charge l'amarrage sous la forme de fichiers journaux                                          | 22.12               | openEuler 22.03 SP1                  |
 | Prise en charge de l'amarrage du client kafka                                                          | 22.12               | openEuler 22.03 SP1                  |
 | Prise en charge de la capacité de surveillance de la sonde de changement dynamique de l'interface REST | 23.06               | openEuler 22.03 SP1, openEuler 23.09 |
-
-test
